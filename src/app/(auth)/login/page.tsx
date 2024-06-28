@@ -91,6 +91,7 @@ export default function SignInOne() {
                 Register
               </Link>
             </p>
+            <p>Login As Admin? <Link href={"admin/login"}>Admin Login</Link></p>
             <form action="#" method="POST" className="mt-8">
               <div className="space-y-5">
                 <div>

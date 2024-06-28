@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Toast from "@/_components/Toast";
+import Link from "next/link";
 
 export default function AdminLogin() {
   const router = useRouter();
@@ -54,10 +55,18 @@ export default function AdminLogin() {
           <div className="mt-5">
             <button
               type="submit"
-              className="w-full bg-red-400 rounded-lg p-2 text-white hover:bg-red-800 hover:ring-4"
+              className="w-full bg-red-400 rounded-lg p-2 text-white hover:bg-red-800 hover:font-bold"
             >
               Submit
             </button>
+            <p className="w-full mt-4 bg-red-400 text-center rounded-lg p-2 text-white hover:bg-red-800 hover:font-bold"
+            ><Link
+              href="/login"
+            >
+                Back
+              </Link></p>
+
+
           </div>
         </form>
       </div>
